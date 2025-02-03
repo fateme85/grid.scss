@@ -1,0 +1,30 @@
+.header{
+    &{
+       height: 95vh;
+       background-image: linear-gradient(#0333249c, #39997c) ,url(/image/OIP.jfif);
+       background-position: top;
+       background-size: cover;
+       background-repeat: no-repeat;
+       clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+       position: relative;
+     }
+     &-text-box{
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       text-align: center;
+       font-family: 'IRANSans_reg';
+    }
+    &-logo-container{
+       height: $spacing-xxs;
+       position: absolute;
+       left: 30px;
+       top: 30px;
+    }
+    &-logo{
+       width: $spacing-md;
+       height: $spacing-md;
+    }
+  }
+ 

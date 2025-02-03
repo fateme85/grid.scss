@@ -1,0 +1,21 @@
+.primary-heading{
+    &{
+       color: $color-white;
+    }
+    &-top{
+       display: block;
+       font-size: $spacing-lg;
+       letter-spacing: $spacing-xs1;
+       font-weight: 400;
+       animation: moveInRight 3s;
+    }
+    &-bottom{
+       display: block;
+       font-size: $spacing-md;
+       letter-spacing: $spacing-xs;
+       font-weight: 400;
+       animation: moveInLeft 3s;
+       margin-bottom: $spacing-sm;
+    }
+  }
+ 
