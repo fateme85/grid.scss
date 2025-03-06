@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/css/style.css">
 </head>
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="nav-checkbox">
+        <label for="nav-checkbox" class="navigation__button">
+            <span class="navigation__icon">
+                &nbsp;
+            </span>
+        </label>
+        <div class="navigation__background">
+            &nbsp;
+        </div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        صفحه اصلی
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        لیست تورها
+                    </a>
+                </li>
+                <li class="navigation__item" >
+                    <a href="#" class="navigation__link">
+                        درباره ما
+                    </a>
+                </li>
+                <li class="navigation__item" >
+                    <a href="#" class="navigation__link">
+                        تماس با ما
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <header class="header">
         <span class="header-logo-container">
             <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
@@ -22,13 +57,346 @@
                     در دل طبیعت جریان دارد...
                 </span>
             </h1>
-            <a href="#" class="btn btn-white">
+            <a href="#" class="btn btn--white">
                 از تورهای ما دیدن کنید 
             </a> 
         </div>
     </header>
+    <main>
+        <section class="about-section">
+            <div class="u-center-text u-margin-bottom-big">
+                <h1 class="secondary-heading">
+                    تورهای هیجان انگیز برای افراد ماجراجو
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img src="image/download.jfif" alt="photo1" class="composition__photo composition__photo--p1">
+                        <img src="image/OIP (2).jfif" alt="photo2" class="composition__photo composition__photo--p2">
+                        <img src="image/p2.jfif" alt="photo3" class="composition__photo composition__photo--p3">
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        ماجراجویی هایی را تجربه کن که هیچگاه پیش از این نداشته ای.
+                    </h3>
+                    <p class="paragragh">
+                        جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                    </p>
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        قراره عاشق طبیعت شی...
+                    </h3>
+                    <p class="paragragh">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                         کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با
+                         نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. 
+                    </p>
+                    <a href="#" class="btn-text">
+                        بیشتر بدانید &larr;
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section-features">
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <img src="icons/icons8-heart-50.png" alt="feature1" class="feature-box__icon">
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                            زندگی سالم تر داشته باشید...
+                        </h3>
+                        <p class="feature-box__text">
+                            جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>                
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <img src="icons/icons8-map-50.png" alt="feature2" class="feature-box__icon">
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                            راه خود را پیدا کنید...
+                        </h3>
+                        <p class="feature-box__text">
+                            جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>                
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <img src="icons/icons8-world-50.png" alt="feature3" class="feature-box__icon">
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                            جهان را کشف کنید...
+                        </h3>
+                        <p class="feature-box__text">
+                            جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>                
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <img src="icons/icons8-compass-50.png" alt="feature4" class="feature-box__icon">
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                            به ملاقات طبیعت بروید...
+                        </h3>
+                        <p class="feature-box__text">
+                            جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.   
+                        </p>                
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="tours-section">
+            <div class="u-center-text u-margin-bottom-big">
+                <h1 class="secondary-heading">
+                    محبوب ترین تورها
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">
+                                    تورهای دریایی
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>تور 3 روزه</li>
+                                    <li> تا 30 نفر</li>
+                                    <li>همراه با دو تور لیدر</li>
+                                    <li>اقامت در بهترین هتل</li>
+                                    <li>همراه با صبحانه رایگان</li>
+                                </ul>
+                            </div> 
+                        </div> 
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">
+                                        فقط
+                                    </p>
+                                    <p class="card__price-value">
+                                        500 هزار تومان
+                                    </p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">
+                                    از تورهای ما دیدن کنید!
+                                </a> 
+                            </div> 
+                        </div>                                          
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">
+                                   تورهای کوهستانی
+                                </span>      
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>تور 7 روزه</li>
+                                    <li> تا 20 نفر</li>
+                                    <li>همراه با دو تور لیدر</li>
+                                    <li>اقامت در بهترین هتل</li>
+                                    <li>همراه با صبحانه رایگان</li>
+                                </ul>
+                            </div>  
+                        </div> 
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">
+                                        فقط
+                                    </p>
+                                    <p class="card__price-value">
+                                        1 میلیون تومان
+                                    </p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">
+                                    از تورهای ما دیدن کنید!
+                                </a> 
+                            </div>  
+                        </div>                      
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">
+                                    تورهای ییلاقی
+                                </span>                                   
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>تور 5 روزه</li>
+                                    <li> تا 50 نفر</li>
+                                    <li>همراه با دو تور لیدر</li>
+                                    <li>اقامت در چادر</li>
+                                    <li>همراه با صبحانه رایگان</li>
+                                </ul>
+                            </div>   
+                        </div> 
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">
+                                        فقط
+                                    </p>
+                                    <p class="card__price-value">
+                                        1500 هزار تومان
+                                    </p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">
+                                    از تورهای ما دیدن کنید!
+                                </a> 
+                            </div>  
+                        </div>                      
+                    </div>
+                </div> 
+            </div>
+            <div class="u-center-text u-margin-bottom-big">
+                <a href="#" class="btn btn--green">
+                    مشاهده ی همه تورها
+                </a> 
+            </div>  
+        </section>
+        <section class="section-stories">
+            <div class="u-center-text u-margin-bottom-big">
+                <h1 class="secondary-heading">
+                    ما مردم را شگفت زده می کنیم!
+                </h1>
+            </div>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="image/girl4.jfif" alt="girl" class="story__image">
+                        <figcaption class="story__caption">
+                            سارا افشار
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <div class="u-margin-bottom-small">
+                            <h3>من بهترین تعطیلات را با خانوادم داشتم.</h3>
+                        </div>
+                        <p>
+                            شاید تصوری که از طبیعت گردی در ذهن خود دارید 
+                            فقط به یک نوع سفر گردشگری محدود شده باشد و اطلاعات زیادی درباره انواع طبیعت گردی نداشته باشید 
+                            اما به طور این شاخه از گردشگری به شش گروه تقسیم شده و همه جاذبه‌های طبیعی را در بر می‌گیرد.
+                            این شش گروه طبیعت گردی شامل گردشگری اقلیمی، گردشگری ساحلی، گردشگری کوهستانی و برفی، گردشگری جنگل، گردشگری کویری و بیابانی و گردشگری در چشمه‌ها،
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="image/boy1.jfif" alt="boy" class="story__image">
+                        <figcaption class="story__caption">
+                            رایان غلامی
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <div class="u-margin-bottom-small">
+                            <h3>من بهترین تعطیلات را با خانوادم داشتم.</h3>
+                        </div>
+                        <p>
+                            شاید تصوری که از طبیعت گردی در ذهن خود دارید 
+                            فقط به یک نوع سفر گردشگری محدود شده باشد و اطلاعات زیادی درباره انواع طبیعت گردی نداشته باشید 
+                            اما به طور این شاخه از گردشگری به شش گروه تقسیم شده و همه جاذبه‌های طبیعی را در بر می‌گیرد.
+                            این شش گروه طبیعت گردی شامل گردشگری اقلیمی، گردشگری ساحلی، گردشگری کوهستانی و برفی، گردشگری جنگل، گردشگری کویری و بیابانی و گردشگری در چشمه‌ها،
+                    </div>
+                </div>
+            </div>
+            <div class="u-center-text">
+            <a href="#" class="btn-text">
+                همه داستان ها را بخوانید
+            </a>
+            </div>
+        </section>
+        <section class="booking-section">
+            <div class="row">
+                <div class="booking">
+                    <form action="" class="booking__form">
+                        <div class="u-margin-bottom-medium">
+                            <h1 class="secondary-heading">
+                                الان رزرو کنید...
+                            </h1>
+                        </div>
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="نام" id="name" required>
+                            <label for="name" class="form__label">نام</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder="ایمیل" id="email" required>
+                            <label for="email" class="form__label">ایمیل</label>
+                        </div>
+                        <div class="form__group">
+                            <div class="form__radio-group">
+                                <input type="radio" class="form__radio-input" id="small" name="size">
+                                <label for="small" class="form__radio-label">
+                                    <span class="form__radio-button">
 
-    <section>
+                                    </span>
+                                    گروه تورهای کوچک
+                                </label>
+                            </div>
+                            <div class="form__radio-group">
+                                <input type="radio" class="form__radio-input" id="big" name="size">
+                                <label for="big" class="form__radio-label">
+                                    <span class="form__radio-button">
+
+                                    </span>
+                                    گروه تورهای بزرگ
+                                </label>
+                            </div>
+                        </div>
+                        <div class="u-margin-bottom-medium">
+                            <a href="#" class="btn btn--green">
+                                مرحله بعد
+                            </a> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__right">
+                <img src="/image/OIP (3).jfif" alt="tour photo" class="popup__img">
+                <img src="/image/p2.jfif" alt="tour photo" class="popup__img">
+            </div>
+            <div class="popup__left">
+                <a href="#" class="popup__close">&times;</a>
+                <h1 class="secondary-heading u-margin-bottom-medium">
+                    الان رزرو کنید...
+                </h1>
+                <p class="popup__text u-margin-bottom-medium">
+                    شاید تصوری که از طبیعت گردی در ذهن خود دارید فقط به یک نوع سفر گردشگری محدود شده باشد و اطلاعات زیادی درباره انواع طبیعت گردی نداشته باشید اما به طور این شاخه از گردشگری به شش گروه تقسیم شده و همه جاذبه‌های طبیعی را در بر می‌گیرد.
+                    ما به طور این شاخه از گردشگری به شش گروه تقسیم شده و همه جاذبه‌های طبیعی را در بر می‌گیرد.
+                            این شش گروه طبیعت گردی شامل گردشگری اقلیمی، گردشگری ساحلی، گردشگری کوهستانی
+                </p>
+                <a href="#" class="btn btn--green">
+                    رزرو
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- <section> 
         <div class="row">
             <div class="col-1-of-2">
                 col 1 of 2
@@ -94,6 +462,6 @@
                 col 3 of 4
             </div>
         </div>
-    </section>
+    </section> --> 
 </body>
 </html>

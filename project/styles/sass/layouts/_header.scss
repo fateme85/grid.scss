@@ -1,0 +1,46 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:  $spacing-lg;
+    &-icon{
+        display: flex;
+        justify-content: space-between;
+        margin-right: $spacing-sm;
+    }
+    &-icon-logo{
+        width: 25rem;
+        height: 6rem;
+        margin-right: $spacing-md;
+    }
+    &-logo{
+        width: 22rem;
+        height: 4rem;
+    }
+    &-icon-search{
+        width: 70rem;
+        height: 5rem;
+        border-radius: 1rem;
+        border: 1px solid $color-light-gray;
+        display: flex;
+        align-items: center;
+        margin-right: $spacing-xxl;
+    }
+    &-icon-search-input{
+        width: 40rem;
+        font-family: 'IRANSans_reg';
+        font-size: $spacing-xs1;
+        padding-right: $spacing-xs1;
+        border: 0 solid $color-light-gray;
+        outline: none;
+        padding: $spacing-xs;
+        &::placeholder{
+            color: $color-gray;
+        }
+    }
+}
+.search-icon{
+    width: $spacing-xl;
+    height: $spacing-xl;
+}
+

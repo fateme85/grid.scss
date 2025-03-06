@@ -4,12 +4,23 @@
 @import 'base/base';
 @import 'base/animations';
 @import 'base/typograghy';
+@import 'base/utilities.scss';
 
 @import 'components/button';
 @import 'components/heading';
+@import 'components/composition';
+@import 'components/features-box';
+@import 'components/card';
+@import 'components/story';
+@import 'components/form';
+@import 'components/popup';
+
 
 @import 'layouts/header';
-@import 'layouts/grid'
+@import 'layouts/grid';
+@import 'layouts/navigation';
+
+@import 'pages/home.scss';
 
 
 

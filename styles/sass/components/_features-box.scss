@@ -1,0 +1,19 @@
+.feature-box{
+    background-color: $color-white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2px;
+    box-shadow: 0 1.5rem 2rem rgba(0,0,0, 0.2);
+    transition: all 0.2s;
+
+    &__icon{
+        width: 3rem;
+    }
+    &__text{
+        font-family: 'IRANSans_reg';
+        font-size: $spacing-xs1;
+    }
+    &:hover{
+        transform: translateY(-1.05rem) scale(1.05);
+    }
+}

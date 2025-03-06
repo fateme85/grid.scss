@@ -21,14 +21,22 @@
  
     /*primary colors */
     $color-primary: #087f5b;   /*primary green */
-    $color-primary-light: #39997c;   /*lighter green */
+    $color-primary-light: #42ba96;   /*lighter green */
     $color-primary-dark: #033324;   /*darker green */
  
     /*secondary colors */
     $color-secondary: #e74c3c;  /* secondary red */
-    $color-secondary-light: #ec7063;  /* lighter red */
+    $color-secondary-light: #f3bbb5;  /* lighter red */
     $color-secondary-dark: #cb4335;  /* darker red */
  
+
+    /*tertiary-colors */
+    $color-tertiary: #e599b3;  /* tertiary purple */
+    $color-tertiary-light: #e6b9c7;  /* lighter purple */
+    $color-tertiary-dark: #e25083;  /* darker purple */ 
+
+
+
     /* natural colors (grayscale) */
     $color-black: #000000;
     $color-dark-gray: #333333;
@@ -41,3 +49,4 @@
     $grid-width: 114rem;
     $gutter-vertical: 8rem;
     $gutter-horizontal: 6rem;
+    $gutter-vertical-small: 4rem;

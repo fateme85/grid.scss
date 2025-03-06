@@ -1,0 +1,163 @@
+.card{
+    perspective: 200rem;
+    -moz-perspective: 200rem;
+    position: relative;
+    height: 50rem;
+    &__side{
+        box-shadow: 0 2rem 3rem rgba($color: #000000, $alpha: 0.15);
+        border-radius: 5px;
+        height: 50rem;
+        transition: all 0.8s; 
+        color: $color-dark-gray;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        &--front{
+            background-color: $color-white;
+        }
+        &--back{
+            transform: rotateY(180deg);
+            &-1{
+                background-image: linear-gradient(45deg, rgba($color-tertiary-light,0.85),rgba($color-tertiary-dark,0.85));         
+            }
+            &-2{
+                background-image: linear-gradient(45deg, rgba($color-secondary-light,0.85),rgba($color-secondary-dark,0.85)); 
+            }
+            &-3{
+                background-image: linear-gradient(45deg, rgba($color-primary-light,0.85),rgba($color-primary-dark,0.85)); 
+            }
+        }     
+    }
+
+    &:hover &__side--front{
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back{
+         transform: rotateY(0deg);
+    } 
+    &__picture{
+        height: 23rem;
+        background-size: cover;
+        background-position: cover;
+        -webkit-clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+        clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+        background-blend-mode: screen;
+        &--1{
+            background-image:linear-gradient(45deg , $color-tertiary-light, $color-tertiary-dark), url(/image/c6.jfif);
+        }
+        &--2{
+            background-image:linear-gradient(45deg , $color-secondary-light, $color-secondary-dark), url(/image/c4.jfif);
+        }
+        &--3{
+            background-image: linear-gradient(45deg , $color-primary-light, $color-primary-dark), url(/image/c3.jfif);
+        }
+        
+    }  
+    
+    &__heading{
+        font-size: 2.5rem;
+        font-family: 'IRANSans_bol';
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 40%;
+        &-span{
+            padding: 1rem 1.7rem;
+            box-decoration-break: clone;
+            &--1{
+                background-image: linear-gradient(45deg, rgba($color-tertiary-light,0.85),rgba($color-tertiary-dark,0.85));         
+            }
+            &--2{
+                background-image: linear-gradient(45deg, rgba($color-secondary-light,0.85),rgba($color-secondary-dark,0.85)); 
+            }
+            &--3{
+                background-image: linear-gradient(45deg, rgba($color-primary-light,0.85),rgba($color-primary-dark,0.85)); 
+            }
+        }     
+    } 
+    &__details{
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-family: 'IRANSans_reg';
+        ul{
+            color: $color-dark-gray;
+            width: 80%;
+            margin: 0 auto;
+            li{
+                text-align: center;
+                padding: 1rem;
+                &:not(:last-child){
+                    border-bottom: 1px solid $color-gray;
+                }
+            }
+        }
+    }
+    &__cta{
+        width: 100%;
+        position: absolute;
+        font-family: 'IRANSans_bol';
+        top: 50%;
+        left: 50%;
+        color: $color-white;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }  
+    &__price-box{
+        margin-bottom: 6rem;
+    }
+    &__price-only{
+        font-size: $spacing-xs1;
+    }
+    &__price-value{
+        font-size: $spacing-4xl;
+    }
+
+    
+//responsive design
+@media(max-width:56.25em){
+    height: auto;
+
+    &__side{
+        height: auto;
+        position: relative;                     
+
+        &--back{
+            transform: rotateY(0);
+        }     
+    }
+    
+    &:hover &__side--front{
+        transform: rotateY(0);
+    }
+     
+    &__details{
+        padding: 1rem 3rem;
+        font-size: 1.5rem;
+        font-family: 'IRANSans_reg';
+    }
+    &__cta{
+        position: relative;
+        font-family: 'IRANSans_bol';
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        padding: 7rem 4rem 4rem 4.5rem;
+        
+    }  
+    &__price-box{
+        margin-bottom: $spacing-4xl;
+    }
+    &__price-only{
+        font-size: $spacing-xs1;
+    }
+    &__price-value{
+        font-size: $spacing-4xl;
+    }
+
+    }
+
+}
+

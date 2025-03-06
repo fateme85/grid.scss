@@ -18,3 +18,29 @@
     font-family: 'kalame';
     src: url(/fonts/KalamehWeb_Regular.ttf) format("truetype");
  }
+ .secondary-heading{
+   font-size: $spacing-md;
+   font-family: 'IRANSans_bol';
+   font-weight: 700;
+   background-image: linear-gradient(to right, $color-primary-light,$color-primary-dark);
+   background-clip: text;
+   color: transparent;
+   transition: all 0.3s;
+   &:hover{
+       transform: skewY(2deg) skewX(15deg);
+       text-shadow: 0.5rem 1rem 2rem rgba($color: #000000, $alpha: 0.2);
+   }
+}
+
+ .heading-tertiary{
+   font-size: $spacing-xs1;
+   font-family: 'IRANSans_reg';
+   font-weight: 700;
+ }
+ .paragragh {
+   font-family: 'IRANSans_reg';
+   font-size: $spacing-xs;
+   &:not(:last-child){
+      margin-bottom: $spacing-md;
+   }
+ }

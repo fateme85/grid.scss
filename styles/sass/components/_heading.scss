@@ -4,18 +4,27 @@
     }
     &-top{
        display: block;
-       font-size: $spacing-lg;
+       font-size: $spacing-6xl;
        letter-spacing: $spacing-xs1;
        font-weight: 400;
        animation: moveInRight 3s;
+       @include responsive(phone){
+         font-size: $spacing-4xl;
+       }
     }
     &-bottom{
        display: block;
-       font-size: $spacing-md;
+       font-size: $spacing-xxl;
        letter-spacing: $spacing-xs;
        font-weight: 400;
        animation: moveInLeft 3s;
        margin-bottom: $spacing-sm;
+       @include responsive(phone){
+         font-size: $spacing-xl;
+       }
+       @include responsive(tab-por){
+         font-size: $spacing-lg;
+       }
     }
   }
  

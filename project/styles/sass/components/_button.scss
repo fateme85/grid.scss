@@ -1,0 +1,28 @@
+.btn{
+    &:link,
+    &:visited{
+        text-decoration: none;
+        width: 12rem;
+        height: 5rem;
+        align-items: center;
+        margin-left: 6rem;
+        border: 1px solid $color-gray;
+        border-radius: $spacing-xs;
+        font-size: $spacing-xs1;
+        font-family: 'IRANSans_reg';
+        color: $color-gray;
+        cursor: pointer;
+        padding: 1rem;
+
+    }
+    &:hover{
+        background-color: $color-primary-light;
+        color: $color-white;
+    }
+}
+.btn-text{
+    &:link,
+    &:visited{
+        
+    }
+}

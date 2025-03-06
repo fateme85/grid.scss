@@ -1,0 +1,11 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: $spacing-sm;
+    &__photo{
+        width: 35.6rem;
+        height: 24rem;
+        border-radius: $spacing-sm;
+    }
+}

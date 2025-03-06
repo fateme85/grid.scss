@@ -1,0 +1,35 @@
+.secondary-heading{
+    height: 50rem;
+    background-image: linear-gradient( $color-primary, $color-primary-light) ,url(/project/images/h.jfif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: 'IRANSans_reg';
+    border-radius: $spacing-md;
+}
+.primary-heading{
+    position: absolute;
+    color: $color-white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    &-top{
+        display: block;
+        letter-spacing: $spacing-xs;
+        font-size: $spacing-md;
+        font-weight: 400;
+        margin-bottom: $spacing-sm;
+        animation: moveInRight 3s ease-in; 
+    }
+    &-bottom{
+        display: block;
+        letter-spacing: $spacing-xxs;
+        font-size: $spacing-sm;
+        font-weight: 400;
+        animation: moveInLeft 3s ease-in;
+       
+    }
+}
+

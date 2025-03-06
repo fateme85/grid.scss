@@ -1,0 +1,597 @@
+/*design-system*/
+/*spacing system */
+/* color system*/
+/*primary colors */
+/*primary green */
+/*lighter green */
+/*darker green */
+/*secondary colors */
+/* secondary red */
+/* lighter red */
+/* darker red */
+/*tertiary-colors */
+/* tertiary purple */
+/* lighter purple */
+/* darker purple */
+/* natural colors (grayscale) */
+.primary-heading {
+  color: #ffffff;
+  font-family: "IRANSans_reg";
+}
+.primary-heading-top {
+  display: block;
+  letter-spacing: 1.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+  animation: moveInRight 3s;
+}
+.primary-heading-bottom {
+  display: block;
+  letter-spacing: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  animation: moveInleft 3s;
+  margin-bottom: 3rem;
+}
+
+.secondary-heading {
+  font-size: 2.5rem;
+  font-family: "IRANSans_bol";
+  font-weight: 700;
+  background-image: linear-gradient(to right, #55c4a3, #033324);
+  background-clip: text;
+  color: transparent;
+}
+.secondary-heading:hover {
+  text-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+  transform: skewY(2deg) skewX(15deg);
+  transition: all 0.3s;
+}
+
+.heading-tertiary {
+  font-size: 1.5rem;
+  font-family: "IRANSans_reg";
+}
+
+.paragragh {
+  font-size: 1rem;
+  font-family: "IRANSans_reg";
+}
+.paragragh:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.btn:link, .btn:visited {
+  background-color: #ffffff;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  display: inline-block;
+  font-family: "IRANSans_reg";
+  transition: all 0.3s;
+}
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn--white {
+  background-color: #ffffff;
+  color: #333333;
+}
+.btn--green {
+  background-color: #0d7e5c !important;
+  color: #ffffff;
+}
+
+.btn-text:link, .btn-text:visited {
+  color: #0d7e5c;
+  font-family: "IRANSans_reg";
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-bottom: 1px solid #0d7e5c;
+  padding: 3px;
+}
+.btn-text:hover {
+  color: #ffffff;
+  background-color: #0d7e5c;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.composition {
+  position: relative;
+  min-height: 33rem;
+}
+.composition__photo {
+  position: absolute;
+  max-width: 50%;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+  transition: all 0.2s;
+  z-index: 10;
+}
+.composition__photo--p1 {
+  top: -2rem;
+  right: 0;
+}
+.composition__photo--p2 {
+  top: 2rem;
+  left: 0;
+}
+.composition__photo--p3 {
+  top: 8rem;
+  right: 20%;
+}
+.composition__photo:hover {
+  z-index: 20;
+  outline: 1.2rem solid #087f5b;
+  outline-offset: 2rem;
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.feature-box {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 2px;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+.feature-box__icon {
+  height: 3rem;
+  width: 3rem;
+}
+.feature-box__text {
+  font-size: 1.5rem;
+  font-family: "IRANSans_reg";
+}
+.feature-box:hover {
+  transform: translateY(-1.05rem) scale(1.05);
+}
+
+.card {
+  perspective: 200rem;
+  -moz-perspective: 200rem;
+  position: relative;
+  height: 50rem;
+}
+.card__side {
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  height: 50rem;
+  color: #333333;
+  transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.card__side--front {
+  background-color: #ffffff;
+}
+.card__side--back {
+  transform: rotateY(180deg);
+}
+.card__side--back-1 {
+  background-image: linear-gradient(45deg, rgba(230, 185, 199, 0.85), rgba(226, 80, 131, 0.85));
+}
+.card__side--back-2 {
+  background-image: linear-gradient(45deg, rgba(243, 187, 181, 0.85), rgba(203, 67, 53, 0.85));
+}
+.card__side--back-3 {
+  background-image: linear-gradient(45deg, rgba(85, 196, 163, 0.85), rgba(3, 51, 36, 0.85));
+}
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0deg);
+}
+.card__picture {
+  height: 23rem;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background-blend-mode: screen;
+}
+.card__picture--1 {
+  background-image: linear-gradient(45deg, #e6b9c7, #e25083), url(/demo/images/cc1.jpg);
+}
+.card__picture--2 {
+  background-image: linear-gradient(45deg, #f3bbb5, #cb4335), url(/demo/images/cc2.jpg);
+}
+.card__picture--3 {
+  background-image: linear-gradient(45deg, #55c4a3, #033324), url(/demo/images/c3.jpg);
+}
+.card__heading {
+  font-size: 2.5rem;
+  font-family: "IRANSans_bol";
+  color: #ffffff;
+  position: absolute;
+  top: 12rem;
+  right: 2rem;
+  width: 50%;
+}
+.card__heading--span {
+  padding: 1rem 2rem;
+  box-decoration-break: clone;
+}
+.card__heading--span-1 {
+  background-image: linear-gradient(45deg, rgba(230, 185, 199, 0.85), rgba(226, 80, 131, 0.85));
+}
+.card__heading--span-2 {
+  background-image: linear-gradient(45deg, rgba(243, 187, 181, 0.85), rgba(203, 67, 53, 0.85));
+}
+.card__heading--span-3 {
+  background-image: linear-gradient(45deg, rgba(85, 196, 163, 0.85), rgba(3, 51, 36, 0.85));
+}
+.card__details {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: "IRANSans_reg";
+}
+.card__details ul {
+  width: 80%;
+  margin: 0 auto;
+  color: #333333;
+}
+.card__details ul li {
+  padding: 1rem;
+  text-align: center;
+}
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #808080;
+}
+.card__cta {
+  width: 100%;
+  font-family: "IRANSans_bol";
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card__price-box {
+  margin-bottom: 6rem;
+}
+.card__price-only {
+  font-size: 1.5rem;
+}
+.card__price-value {
+  font-size: 5rem;
+}
+
+.story {
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  width: 75%;
+  padding: 6rem;
+  transform: skewX(-12deg);
+}
+.story > * {
+  transform: skewX(12deg);
+}
+.story__shape {
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  margin-right: 1rem;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  position: relative;
+}
+.story__image {
+  height: 100%;
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+.story__text {
+  font-size: 1.5rem;
+  font-family: "IRANSans_reg";
+}
+.story__caption {
+  color: #ffffff;
+  position: absolute;
+  font-size: 1.5rem;
+  font-family: "IRANSans_reg";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.story:hover .story__caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+.story:hover .story__image {
+  filter: blur(3px) brightness(80%);
+  transform: scale(1);
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+.form__input {
+  font-family: "IRANSans_reg";
+  color: inherit;
+  font-size: 1.5rem;
+  border: none;
+  width: 90%;
+  display: block;
+  padding: 1rem;
+  border-radius: 3px;
+  background: #e0e0e0;
+  box-shadow: inset 10px 10px 10px #bebebe, inset -10px -10px 19px #ffffff;
+  border-bottom: 3px solid transparent;
+}
+.form__input:focus {
+  outline: none;
+  border-bottom: 3px solid #0d7e5c;
+}
+.form__input:focus:invalid {
+  border-bottom: 3px solid #e74c3c;
+}
+.form__label {
+  font-family: "IRANSans_reg";
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  display: block;
+  transition: all 0.3s;
+}
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: 0;
+  transform: translateY(-4rem);
+}
+.form__radio-group {
+  width: 50%;
+  display: inline;
+}
+.form__radio-input {
+  display: none;
+}
+.form__radio-label {
+  cursor: pointer;
+  padding-right: 3rem;
+  font-family: "IRANSans_reg";
+  font-size: 1.3rem;
+  position: relative;
+  margin-left: 1rem;
+}
+.form__radio-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 4px solid #0d7e5c;
+  display: inline;
+  position: absolute;
+  right: 0;
+}
+.form__radio-button::after {
+  content: "";
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  background-color: #0d7e5c;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.form__radio-input:checked + .form__radio-label .form__radio-button::after {
+  opacity: 1;
+}
+
+.row {
+  max-width: 119rem;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^=col-] {
+  float: left;
+}
+.row [class^=col-]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+
+.col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+
+.col-2-of-3 {
+  width: calc(2 * (100% - 2 * 6rem) / 3 + 6rem);
+}
+
+.col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+}
+
+.col-2-of-4 {
+  width: calc(2 * (100% - 3 * 6rem) / 4 + 6rem);
+}
+
+.col-3-of-4 {
+  width: calc(3 * (100% - 3 * 6rem) / 4 + 2 * 6rem);
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(#033324, #55c4a3), url(/demo/images/OIP\ \(3\).jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+.header-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header-logo-container {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+.header-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.7;
+  direction: rtl;
+  padding: 2.5rem;
+  color: #333333;
+}
+
+main {
+  background-color: #d3d3d3;
+}
+
+li {
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: "IRANSans_light";
+  src: url(/fonts/IRANSans_Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "IRANSans_reg";
+  src: url(/fonts/IRANSans.ttf) format("truetype");
+}
+@font-face {
+  font-family: "IRANSans_Med";
+  src: url(/fonts/IRANSans_Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "IRANSans_bol";
+  src: url(/fonts/IRANSans_Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "kalame";
+  src: url(/fonts/KalamehWeb_Regular.ttf) format("truetype");
+}
+@keyframes moveInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-3rem) scale(1.1);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes moveInleft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(3rem) scale(1.1);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.about-section {
+  margin-top: -25vh;
+  padding: 25rem 0;
+}
+
+.section-features {
+  padding: 20rem 0;
+  margin-top: -18rem;
+  background-image: linear-gradient(#033324, #55c4a3), url(/demo/images/OIP\ \(1\).jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: skewY(-7deg);
+}
+.section-features > * {
+  transform: skewY(7deg);
+}
+
+.tours-section {
+  padding: 25rem 2rem 0;
+  margin-top: -10rem;
+}
+
+.section-stories {
+  padding-bottom: 15rem;
+}
+
+.booking-section {
+  background-image: linear-gradient(45deg, #55c4a3, #033324);
+  padding: 15rem 0;
+}
+
+.booking {
+  background-image: linear-gradient(250deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(/demo/images/p1.jpg);
+  height: 50rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+}
+.booking__form {
+  width: 50%;
+  padding: 5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

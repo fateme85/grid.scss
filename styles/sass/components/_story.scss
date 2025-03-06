@@ -1,0 +1,71 @@
+.story{
+    margin: 0 auto;
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    width: 75%;
+    padding: 6rem;
+    transform: skewX(-12deg);
+    & > * {
+        transform: skewX(12deg);
+    }
+    @include responsive(tab-por){
+       width: 100% !important;
+       padding: $spacing-4xl;
+    }
+    @include responsive(phone){
+        transform: skewX(0);
+    }
+
+
+    &__shape{
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        margin-right: 1rem;
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        position: relative;
+        @include responsive(tab-por){
+            margin-right: 3rem;
+        }
+        @include responsive(phone){
+            transform: translateX(-3rem) skewX(0);
+        }
+        @include responsive(tab-land){
+            margin-right: 3rem;
+        }
+    
+    }
+    &__image{
+        height: 100%;
+        transform: scale(1.3);
+        transition: all 0.5s;
+    }
+    &__text{
+        font-size: $spacing-xs1;
+        font-family: 'IRANSans_reg';
+        @include responsive(phone){
+            transform: skewX(0);
+        }
+    }
+    &__caption{
+        position: absolute;
+        color: $color-white;
+        font-size: $spacing-xs1;
+        font-family: 'IRANSans_reg';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        transition: all 0.5s;
+        opacity: 0;
+    }
+    &:hover &__caption{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    &:hover &__image{
+        transform: scale(1);
+        filter: blur(3px) brightness(80%);
+    }
+}

@@ -1,0 +1,45 @@
+.primary-heading{
+    color: $color-white;
+    font-family: 'IRANSans_reg';
+    &-top{
+        display: block;
+        letter-spacing: $spacing-xs1;
+        font-size: $spacing-lg;
+        font-weight: 700;
+        animation: moveInRight 3s;
+    }
+    &-bottom{
+        display: block;
+        letter-spacing: $spacing-xs;
+        font-size: $spacing-md;
+        font-weight: 600;
+        animation: moveInleft 3s;
+        margin-bottom: $spacing-lg;
+    }
+}
+
+.secondary-heading{
+    font-size: $spacing-md;
+    font-family: 'IRANSans_bol';
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-clip: text;
+    color: transparent;
+    &:hover{
+        text-shadow: 0 1.5rem 2rem rgba($color: #000000, $alpha: 0.2);
+        transform: skewY(2deg) skewX(15deg);
+        transition: all 0.3s;
+    }
+    
+}
+.heading-tertiary{
+    font-size: $spacing-xs1;
+    font-family: 'IRANSans_reg';
+}
+.paragragh{
+    font-size: $spacing-xs;
+    font-family: 'IRANSans_reg';
+    &:not(:last-child){
+        margin-bottom: $spacing-md;
+    }
+}
